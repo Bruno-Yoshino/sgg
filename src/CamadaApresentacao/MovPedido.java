@@ -1118,7 +1118,7 @@ public class MovPedido extends javax.swing.JDialog {
                         if(pc.gravarPedido())
                         {
                             pc.UpdateNumberPedido();
-                            if(pc.gravarPedidoServico() && !dcEntrega.isVisible())
+                            if(!dcEntrega.isVisible() && pc.gravarPedidoServico())
                             {
 //                                if(pc.gravarPedidoServicoDetalhe())
 //                                {
